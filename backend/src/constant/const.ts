@@ -2,7 +2,7 @@ export const HTTP_METHOD = ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'] as const
 export type HttpMethod = (typeof HTTP_METHOD)[number]
 
 // module name
-export const MODULE_NAME = ['PRODUCT', 'SERVICE', 'CATE', 'BOOKING', 'USER', 'ROLE', 'AUTH'] as const
+export const MODULE_NAME = ['PRODUCT', 'SERVICE', 'CATEGORY', 'BOOKING', 'USER', 'ROLE', 'AUTH'] as const
 export type ModuleName = (typeof MODULE_NAME)[number]
 
 // service status

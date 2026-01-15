@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx nodemon",
-    "seeds-role": "tsx ./src/seeds/seedRole.ts",
+    "seeds-roles": "tsx ./src/seeds/seedRole.ts",
+    "seeds-permissions": "tsx ./src/seeds/seedPermissions.ts",
+    "seeds-role-permissions": "tsx ./src/seeds/seedRolePermissions.ts",
     "build": "rimraf ./dist && tsc && tsc-alias",
     "start": "node dist/index.js",
     "lint": "eslint .",
@@ -38,6 +40,7 @@
     "@types/express": "^5.0.6",
     "@types/jsonwebtoken": "^9.0.10",
     "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.1.3",
