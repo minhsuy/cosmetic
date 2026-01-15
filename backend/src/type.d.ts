@@ -3,6 +3,6 @@ export type SignTokenArgs = {
   type: TokenType
   expiresIn: string
   secret: string
-  role?: string
+  roleId?: string
   expriedIn
 }

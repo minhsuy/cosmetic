@@ -1,4 +1,3 @@
-import { Token } from './../../node_modules/path-to-regexp/dist/index.d'
 export enum EUserRole {
   ADMIN = 'ADMIN',
   CUSTOMER = 'CUSTOMER',

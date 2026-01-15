@@ -5,15 +5,15 @@ import { SignTokenArgs } from '~/type'
 export interface CustomJwtPayload extends JwtPayload {
   userId: string
   tokenType: TokenType
-  role?: string
+  roleId?: string
 }
 
-export const signTokenAsync = ({ expiresIn, userId, type, role, secret }: SignTokenArgs): Promise<string> => {
+export const signTokenAsync = ({ expiresIn, userId, type, roleId, secret }: SignTokenArgs): Promise<string> => {
   if (!secret) throw new Error('Missing secret')
 
   const payload: CustomJwtPayload = {
     userId,
-    role,
+    roleId,
     tokenType: type
   }
 
